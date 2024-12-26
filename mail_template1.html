@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acil Kan Bağışı Talebi</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f9f9f9" style="padding: 20px 0;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" style="background: #ffffff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <tr>
+                        <td align="center" style="padding: 20px; background-color: #d32f2f; color: #ffffff; font-size: 24px; font-weight: bold; border-radius: 8px 8px 0 0;">
+                            {{params.blood}} Acil Kan Bağışı İhtiyacı
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px; font-size: 16px; line-height: 1.6; color: #333333;">
+                            <p>Merhaba <strong>{{params.receiverName}}</strong>,</p>
+                            <p>
+                                Umarız bu mesaj sizi iyi bir zamanda bulur. Size, acil bir kan bağışı talebiyle ulaşıyoruz. 
+                                <strong>{{params.locations}}</strong>, <strong>{{params.blood}}</strong> kan grubuna acil ihtiyaç duymaktadır.
+                            </p>
+                            <table width="100%" cellpadding="10" cellspacing="0" border="1" style="border-collapse: collapse; border: 1px solid #dddddd; margin: 20px 0;">
+                                <tr style="background-color: #f2f2f2;">
+                                    <td><strong>Kan Grubu</strong></td>
+                                    <td>{{params.blood}}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Hastane/İletişim Noktası</strong></td>
+                                    <td>{{params.locations}}</td>
+                                </tr>
+                                <tr style="background-color: #f2f2f2;">
+                                    <td><strong>Talebin Aciliyeti</strong></td>
+                                    <td>{{params.timeout}}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>İletişim Bilgisi</strong></td>
+                                    <td>{{params.contact}}</td>
+                                </tr>
+                            </table>
+                            <p>
+                                Eğer siz <strong>{{params.blood}}</strong> kan grubuna sahipseniz ve bu ihtiyaca destek olabilecek durumdaysanız, 
+                                lütfen en kısa sürede belirtilen iletişim noktasıyla iletişime geçiniz. Kan bağışı, hayat kurtarmanın en doğrudan yollarından biridir ve sizin desteğiniz bir hayatın kurtulmasına yardımcı olabilir.
+                            </p>
+                            <p>
+                                Bağış yapamasanız bile, bu mesajı uygun kan grubundaki diğer insanlarla paylaşarak destek olabilirsiniz.
+                            </p>
+                            <p style="text-align: right; margin-top: 30px;">
+                                Saygılarımızla,<br>
+                                <strong>Kanver ekibi</strong><br>
+                                {{params.contact}}
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
